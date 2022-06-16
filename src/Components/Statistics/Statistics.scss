@@ -1,0 +1,43 @@
+.stats{
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.stats__title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.stats__list{
+  gap: 30px;
+}
+
+.stats__item{
+  height: 110px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.stats__name{
+  font-size: 14px;
+  color: #777;
+}
+
+.stats__number{
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.stats__info{
+  color: red;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.active .nav__link{
+  color: red;
+}
