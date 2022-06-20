@@ -1,11 +1,16 @@
 .stats{
   padding: 20px;
   padding-left: 30px;
+  padding-right: 50px;
 }
 
 .stats__title{
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.stats__column{
+  width: 80%;
 }
 
 .stats__list{
@@ -18,6 +23,8 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   padding: 20px;
   cursor: pointer;
+  color: #444;
+  position: relative;
 }
 
 .stats__name{
@@ -38,6 +45,36 @@
   font-size: 12px;
 }
 
-.active .nav__link{
-  color: red;
+.stats__information{
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  h4{
+    font-size: 16px;
+    color: #666;
+  }
+
+  select{
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 4px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  img{
+    width: 100%;
+    height: 300px;
+  }
+
+}
+
+.stats__graph{
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
 }

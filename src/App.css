@@ -5,6 +5,7 @@
 
 body{
   background-color: #eff0f5;
+  overflow-x: hidden;
 }
 
 button{
@@ -14,4 +15,10 @@ button{
 
 a{
   text-decoration: none;
+}
+
+
+
+*::-webkit-scrollbar {
+  width: 0;
 }
