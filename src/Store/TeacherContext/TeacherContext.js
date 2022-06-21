@@ -15,14 +15,14 @@ function TeacherContext({children}) {
     switch(action.type){
       case 'ADD': 
       return [
-        ...state,
+        
         {id: state.length+1, 
         img: 'https://cdn-icons-png.flaticon.com/512/21/21104.png',
         name: action.payload.name, 
         group: [action.payload.group], 
         number: action.payload.number,
         groupNum: 1 
-      } ]
+      }, ...state, ]
 
       case 'DEL':
         return state.filter(item => item.id !== action.payload.id)

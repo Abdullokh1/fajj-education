@@ -18,7 +18,6 @@ function GroupContext({children}) {
     switch(action.type){
       case 'ADD': 
       return [
-        ...state,
         {id: state.length+1, 
         img: 'https://cdn-icons-png.flaticon.com/512/21/21104.png',
         status: action.payload.status, 
@@ -27,7 +26,7 @@ function GroupContext({children}) {
         payment: action.payload.payment,
         teacher: action.payload.teacher,
         name: action.payload.name
-      } ]
+      },  ...state,]
 
       case 'DEL':
         return state.filter(item => item.id !== action.payload.id)

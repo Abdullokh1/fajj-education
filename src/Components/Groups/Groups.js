@@ -39,10 +39,10 @@ function Groups() {
       </thead>
       <tbody>
 
-        {groupArr.map(item =>{
+        {groupArr.map((item, index) =>{
           return (
             <tr key={item.id}>
-              <td>{item.id}</td>
+              <td>{index + 1}</td>
               <td>{item.name}</td>
               <td>{item.status}</td>
               <td>{item.subject}</td>

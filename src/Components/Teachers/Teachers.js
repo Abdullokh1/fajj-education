@@ -36,10 +36,10 @@ function Teachers() {
         </thead>
 
         <tbody>
-          {teacherArr.map(item =>{
+          {teacherArr.map((item, index) =>{
             return (
               <tr key={item.id}>
-                <td>{item.id}</td>
+                <td>{index + 1}</td>
                 <td><img className='me-2' src={item.img} alt="userImg" width='35' height='35' /> {item.name}</td>
                 <td>Guruh #{item.groupNum}</td>
                 <td>{item.number}</td>
